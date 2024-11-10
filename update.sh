@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 LOG_PATH="/var/log/pterodactyl-update.log"
 echo "Checking if /var/www/pterodactyl exists..."
 if [ -d "/var/www/pterodactyl" ]; then
@@ -11,7 +12,7 @@ if [ -d "/var/www/pterodactyl" ]; then
     echo "Setting permissions on storage and bootstrap/cache..."
     chmod -R 755 storage/* bootstrap/cache
     echo "Installing composer dependencies (manual confirmation required)..."
-    composer install --no-dev --optimize-autoloader &>> $LOG_PATH
+    composer install --no-dev --optimize-autoloader
     echo "Clearing views and config cache..."
     php artisan view:clear &>> $LOG_PATH
     php artisan config:clear &>> $LOG_PATH
