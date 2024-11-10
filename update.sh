@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 LOG_PATH="/var/log/pterodactyl-update.log"
 echo "Checking if /var/www/pterodactyl exists..."
 if [ -d "/var/www/pterodactyl" ]; then
