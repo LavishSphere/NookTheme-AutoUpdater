@@ -1,7 +1,7 @@
 # NookTheme-AutoUpdater
 Unofficial automatic updater for NookTheme (Pterodactyl Panel Theme)
 
-Find [NookTheme]([https://github.com/Nookure/NookTheme) here. This script is not associated with the official NookTheme project.
+Find [NookTheme](https://github.com/Nookure/NookTheme) here. This script is not associated with the official NookTheme project.
 
 ## Feature
 
