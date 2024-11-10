@@ -1,4 +1,5 @@
 #!/bin/bash
+set +x
 if [ ! -d "/var/www/pterodactyl" ]; then
   echo "Directory /var/www/pterodactyl does not exist. Exiting."
   exit 1
