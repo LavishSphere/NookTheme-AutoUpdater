@@ -26,5 +26,6 @@ List of supported installation setups for panel and Wings (installations support
 
 To use the update script, simply run this command as root.
 
-
-
+```bash
+bash <(curl -s https://raw.githubusercontent.com/LavishSphere/NookTheme-AutoUpdater/refs/heads/main/update.sh)
+```
